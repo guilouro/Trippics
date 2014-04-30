@@ -60,12 +60,14 @@ i.icons-info{
 .navbar{
 	height: 55px;
 	padding: 0;
+
 	
 	.logo{
 		background-color: $verde;
 		float: left;
 		padding: 6px 55px;
 		position: relative;
+		margin-left: -14px;
 
 		i{
 			position: absolute;
@@ -107,10 +109,12 @@ i.icons-info{
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		position: absolute;
+		right: 10px;
 
 		li.item{ 
 			float: left; 
-			margin: 8px 10px; 
+			margin: 8px 10px;
 		}
 	}
 	
@@ -224,7 +228,7 @@ div.etapa{
 		position: absolute;
 		margin-top: -25px;
 		top: 50%;
-		right: 0;
+		right: -30px;
 	}
 
 	div.title{
