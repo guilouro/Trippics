@@ -16,25 +16,77 @@
 <body>
 	
 	
-	<div class="top">
+	<div class="container-fluid navbar">
 		
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-						<img src="img/trippics.png" alt="trippics">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="logo">
+					<a href="."> <img src="img/trippics.png" height="43" width="95" alt=""></a>	<i class="fa fa-bars fa-2x"></i>
 				</div>
 				
-				<div class="col-md-4">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, eligendi, eum minima quaerat voluptatem molestiae.
+				<div class="search">
+					<i class="fa fa-search"></i>
+					<form action="." method="post">
+						<input type="text" placeholder="search forv places or things to do">
+					</form>
+				</div>
+			</div>
+			<div class="col-md-4 pull-right">
+					
+					<ul class="infos">
+						<li class="item">
+							<!-- TODOS OS CONCURSOS -->
+							<div class="btn-group">
+						      <button type="button" class="btn btn-default">Todos os concursos <span class="caret"></span></button>
+						    </div>
+						</li>
+						<li class="item">
+							<a href="#" class="btn btn-success"><i class="fa fa-plus"></i></a> 							
+						</li>
+						<li class="item">
+							<!-- PROFILE -->
+							<div class="btn-group">
+						      <button type="button" class="btn btn-default"> <img src="img/user-29x29.png" height="29" width="29" alt=""> Lorem ipsum. <span class="caret"></span></button>
+						    </div>
+						</li>
+					</ul>				
+
 				</div>
 			</div>
 		</div>
 
+
 	</div>
+
 
 	<!-- BANNER -->
 	<div class="banner">
-		<img src="img/bg-header.png" width="100%" alt="">
+		
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-12">
+
+					<!-- JURI -->
+					<div class="juri">
+						<img src="img/juri.png" height="137" width="714" alt="">
+					</div>
+					
+					<hr>
+					
+					<!-- TEXTO -->
+					<div class="text">
+						<div class="line-1">VÃO ESCOLHER A MELHOR</div>
+						<div class="line-2">TRIP DE VERÃO</div>
+					</div>
+
+					<!-- INSCRIÇÃO -->
+					<a href="#" class="btn-insc">INSCREVA SUA TRIP</a> 
+					<div class="regulamento">VEJA O REGULAMENTO</div>
+
+				</div>
+			</div>
+		</div>
+
 	</div>
 	
 	
@@ -49,6 +101,7 @@
 				
 				<!-- ETAPA 1 -->
 				<div class="etapa">
+					<div class="item-num">ETAPA 1</div>
 					<div class="title">Você tem duas maneiras de participar</div>
 					<div class="subtitle">ao clicar em inscrever a sua trip você terá duas opções</div>
 					<div class="description">
@@ -65,6 +118,7 @@
 
 				<!-- ETAPA 2 -->
 				<div class="etapa">
+					<div class="item-num">ETAPA 2</div>
 					<div class="title">Nossa equipe irá avaliar a trip inscrita</div>
 					<div class="subtitle">você poderá acompanhar o seu status na página da sua trip</div>
 					<div class="description">
@@ -78,6 +132,7 @@
 				
 				<!-- ETAPA 3 -->
 				<div class="etapa">
+					<div class="item-num">ETAPA 3</div>
 					<div class="title">TRIP APROVADA?</div>
 					<div class="subtitle">Compartilhe com todos os seus amigos</div>
 					<div class="description">
@@ -92,6 +147,7 @@
 
 				<!-- ETAPA 4 -->
 				<div class="etapa">
+					<div class="item-num">ETAPA 4</div>
 					<div class="title">A TRIP ESCOLHIDA GANHA</div>
 					<div class="description">
 						<div class="trip-escolhida">
@@ -175,12 +231,6 @@
 
 	</div>
 
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
 	<script src="js/site.min.js"></script>
 </body>
 </html>

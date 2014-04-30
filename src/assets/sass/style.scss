@@ -57,12 +57,140 @@ i.icons-info{
 
 
 // HEADER
- .top{
-	background-color: $verde;
- }
+.navbar{
+	height: 55px;
+	padding: 0;
+	
+	.logo{
+		background-color: $verde;
+		float: left;
+		padding: 6px 55px;
+		position: relative;
+
+		i{
+			position: absolute;
+			right: 15px;
+			top: 15px;
+			color: darken($verde, 5%);
+		}
+
+	}
 
 
- 
+	.search{
+		font-size: 22px;
+		color: lighten($cinza, 20%);
+		float: left;
+		i{ 
+			padding: 15px 10px;
+			font-size: 24px;
+			float: left;
+		}
+		form {
+			margin: 0;
+			float: left;
+			input{
+				border: none;
+				padding: 10px 0;
+				margin: 0;
+				width: 340px;
+
+				&:focus{
+					outline: none;
+				}
+			}
+		}
+
+	}
+	
+	ul.infos{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li.item{ 
+			float: left; 
+			margin: 8px 10px; 
+		}
+	}
+	
+	.btn{
+		border: none;
+		&:focus{
+			outline: none;
+			border: none;
+		}
+		&:active{
+			border: none;
+			background-color: #FFF;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+		}
+		&:hover{
+			border: none;
+			background-color: #FFF;
+		}
+	}
+}
+
+
+.banner{
+	background-image: url(../img/bg-header.png);
+	background-size: cover;
+	background-position: center center;
+	height: 470px;
+	margin-bottom: 45px;
+	
+	text-align: center;
+	padding-top: 50px;
+
+	color: #fff;
+
+
+	hr{
+		width: 650px;
+		color: #fff;
+	}
+	
+	.text{
+		font-weight: bold;
+		text-shadow: 2px 3px 6px #333;
+		margin: 20px 0;
+		.line-1{
+			font-size: 45px;
+			margin-bottom: -15px;
+		}
+		.line-2{
+			font-size: 60px;
+		}
+	}
+}
+
+
+.btn-insc{
+	color: #fff;
+	font-size: 25px; 
+	font-weight: bold;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	padding: 8px 15px;
+	@include transition(0.4s);
+
+	&:hover{
+		background-color: #333;
+		border: 3px solid #333;
+		text-decoration: none;
+		color: #fff;
+		@include transition(0.4s);
+	}
+}
+
+.regulamento{
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
 
 // CONTENT
 div.itens{	
@@ -83,6 +211,21 @@ div.itens{
 div.etapa{
 	padding: 15px 45px;
 	position: relative;
+
+	.item-num{
+		behavior:url(-ms-transform.htc);  
+		-moz-transform:rotate(-90deg);  
+		-webkit-transform:rotate(-90deg);  
+		-o-transform:rotate(-90deg);  
+		-ms-transform:rotate(-90deg);
+		color: lighten($cinza, 35%);
+		font-size: 30px;
+		font-weight: bold;
+		position: absolute;
+		margin-top: -25px;
+		top: 50%;
+		right: 0;
+	}
 
 	div.title{
 		font-size: 24px;
