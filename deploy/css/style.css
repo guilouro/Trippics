@@ -2982,6 +2982,23 @@ hr.large {
   border-top: 3px solid #333;
 }
 
+i.icons-medal {
+  width: 31px;
+  height: 45px;
+  margin-top: -5px;
+}
+
+i.icons-info {
+  width: 30px;
+  height: 33px;
+}
+
+[class*='icons'] {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+
 [class*='socials'] {
   width: 24px;
   height: 24px;
@@ -2996,7 +3013,7 @@ hr.large {
 }
 
 p.description {
-  font-size: 17px;
+  font-size: 16px;
   padding: 0 5px;
   color: #838383;
 }
@@ -3017,6 +3034,15 @@ div.box-picture {
 div.box-picture strong {
   font-size: 22px;
 }
+div.box-picture .arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid #333333;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
 
 div.share span.txt, div.apoio span.txt {
   float: left;
@@ -3025,7 +3051,7 @@ div.share span.txt, div.apoio span.txt {
 }
 
 div.apoio {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 16px;
 }
 div.apoio img {
@@ -3034,6 +3060,10 @@ div.apoio img {
 
 form {
   margin: 25px 0;
+}
+form div.radio {
+  font-size: 17px;
+  margin: 15px 0;
 }
 form input[type=submit] {
   padding: 3px 25px;
