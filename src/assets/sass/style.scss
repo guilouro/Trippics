@@ -1,0 +1,91 @@
+@import "bootstrap/bootstrap";
+@import "icons/*.png";
+@import "socials/*.png";
+@include all-icons-sprites;
+@include all-socials-sprites;
+$icons-sprite-dimensions: true;
+$socials-sprite-dimensions: true;
+
+// VARS
+$verde: #7CA220;
+$cinza: #838383;
+
+hr{
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-top: 1px solid #DEDEDE;
+	
+}
+
+hr.large{
+	border-top: 3px solid #333;
+}
+
+
+[class*='socials']{
+	width: 24px;
+	height: 24px;
+	display: block;
+	float:left;
+	margin: 3px;
+	cursor: pointer;
+}
+
+
+ .top{
+	background-color: $verde;
+ }
+
+
+p.description{
+	font-size: 17px;
+	padding: 0 5px;
+	color: $cinza;
+}
+
+
+// SIDEBAR
+
+div.picture{
+	text-align: right;
+}
+
+div.box-picture{
+	background-color: #333333;
+	color: #fff;
+	font-size: 20px;
+	padding:5px 10px;
+	margin-top: -78px;
+	margin-bottom: 25px;
+	position: relative;
+	strong{
+		font-size: 22px;
+	}
+}
+
+div.share{
+	span.txt{ 
+		float: left; 
+		padding:5px 10px 5px 3px;
+		color: $cinza;
+	}
+}
+
+div.apoio{
+	@extend .share;
+	margin-bottom: 30px;
+	font-size: 16px;
+	img{
+		margin-top: -8px;
+	}
+}
+
+form{
+	margin: 25px 0;
+	input[type=submit]{
+		padding: 3px 25px;
+		font-size: 17px;
+		font-weight: bold;
+		margin: 15px 0;
+	}
+}
